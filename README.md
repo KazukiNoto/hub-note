@@ -2,7 +2,8 @@
 
 Zensicalを使って雑記をGitHub Pagesで公開する実験用プロジェクトです。
 
-GitHub Pages
+HUB-NOTE
+
 https://kazukinoto.github.io/hub-note/
 
 
