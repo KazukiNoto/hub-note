@@ -37,7 +37,7 @@ zensical new .
 ```
 
 !!! note
-ここがノートになります。
+    ここがノートになります。
 
 - note
 - abstract
