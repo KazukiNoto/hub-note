@@ -87,6 +87,7 @@ The site has the following Zensical extensions active (see `docs/zensical.md` fo
 ## Conventions
 
 - **Language**: README and commit messages are in Japanese; content pages can be in any language
+- **Chat Language**: すべてのチャットのやり取りは日本語で行うこと
 - **No tests**: There is no test suite. A successful `zensical build --clean` is the only validation
 - **No environment variables**: The project has no `.env` file or runtime secrets; all config is in `zensical.toml`
 - **No node_modules / package.json**: Pure Python toolchain — only `pip install zensical` needed
