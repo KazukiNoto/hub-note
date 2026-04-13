@@ -33,7 +33,7 @@ zensical new .
 
 ```
 !!! note
-ここがノートになります。
+    ここがノートになります。
 ```
 
 !!! note
@@ -51,19 +51,6 @@ zensical new .
 - bug
 - example
 - quote
-
-!!! warning
-
-    This is a **warning** admonition. Be careful!
-
-### Details
-
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
-
-??? info "Click to expand for more info"
-
-    This content is hidden until you click to expand it.
-    Great for FAQs or long explanations.
 
 ## Code Blocks
 
