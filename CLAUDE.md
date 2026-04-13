@@ -27,40 +27,12 @@ hub-note/
 └── README.md               # Project description (in Japanese)
 ```
 
-## Key Commands
-
-```bash
-# Install Zensical
-pip install zensical
-
-# Build the site (output goes to site/)
-zensical build --clean
-
-# Start local dev server (live reload)
-zensical serve
-
-# Initialize a new Zensical project
-zensical new .
-```
-
-There are no test scripts, linters, or package.json. The only validation is whether `zensical build --clean` succeeds.
-
 ## Development Workflow
 
 1. Edit or add Markdown files under `docs/`
 2. Optionally run `zensical serve` locally to preview changes
 3. Commit and push to `master` or `main`
 4. GitHub Actions automatically builds and deploys to GitHub Pages
-
-### CI/CD (`.github/workflows/docs.yml`)
-
-Triggers on push to `master` or `main`. Steps:
-1. Configure GitHub Pages
-2. Checkout repo
-3. Setup Python 3.x
-4. `pip install zensical`
-5. `zensical build --clean` → outputs to `site/`
-6. Upload and deploy to GitHub Pages
 
 ## Adding Content
 
@@ -120,17 +92,6 @@ The site has the following Zensical extensions active (see `docs/zensical.md` fo
 - **No node_modules / package.json**: Pure Python toolchain — only `pip install zensical` needed
 - **Dockerfile** is present but partially commented out; it is not used in CI
 
-## Docker (Optional / Incomplete)
-
-The `dockerfile` sets up `python:3.12.1` but the `WORKDIR`/`COPY`/`RUN` lines are commented out. To complete it for local builds:
-
-```dockerfile
-FROM python:3.12.1
-WORKDIR /app
-COPY . .
-RUN pip install zensical
-CMD ["zensical", "build", "--clean"]
-```
 
 ## What NOT to Do
 
