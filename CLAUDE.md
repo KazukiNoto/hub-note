@@ -93,6 +93,48 @@ The site has the following Zensical extensions active (see `docs/zensical.md` fo
 - **Dockerfile** is present but partially commented out; it is not used in CI
 
 
+## URL Summarization Workflow
+
+When a user provides a URL, follow these steps:
+
+1. **Fetch** the URL content using the `WebFetch` tool
+2. **Summarize** the content in clear, readable Japanese (or the same language as the user's request), covering:
+   - Title / overview of the page
+   - Key points and main topics
+   - Notable details, data, or conclusions
+3. **Save** the summary as a new Markdown file under `docs/` with:
+   - A descriptive, lowercase, hyphenated filename (e.g., `docs/summary-topic-name.md`)
+   - Front matter with an appropriate icon (e.g., `icon: lucide/link`)
+   - A `# Title` heading
+   - A **Source** line linking back to the original URL
+   - The structured summary using headings, bullet points, and admonitions as appropriate
+4. **Commit and push** the new file to the current development branch
+
+### Example file structure
+
+```markdown
+---
+icon: lucide/link
+---
+
+# ページタイトルの要約
+
+**Source**: <https://example.com/article>
+
+## 概要
+
+...
+
+## 主なポイント
+
+- ...
+- ...
+
+## まとめ
+
+...
+```
+
 ## What NOT to Do
 
 - Do not add `node_modules`, `package.json`, or JavaScript build tooling — the stack is Python-only
