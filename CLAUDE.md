@@ -51,6 +51,21 @@ nav = [
 ]
 ```
 
+## Document Organization
+
+When **docs直下** (root of docs, excluding subdirectories) accumulates **5 or more files** (excluding `index.md`), automatically organize and move older articles to category folders:
+
+- **`docs/AI/`** — AI-related articles (AI tools, concepts, techniques)
+- **`docs/TOOL/`** — Tool-related articles (software, frameworks, utilities)
+
+### Guidelines:
+1. Review each article's content to determine appropriate category
+2. Create new category folders as needed based on content
+3. Maintain chronological order when moving (move oldest articles first)
+4. Update navigation if necessary
+
+**Current organization status**: docs直下 = index.md のみ
+
 ## Configuration (`zensical.toml`)
 
 Key settings in `[project]`:
