@@ -154,6 +154,8 @@ icon: lucide/link
 ## Pull Request Guidelines
 
 - **No reviewers**: When creating a pull request, do NOT assign any reviewers (`--reviewer` flag must not be used)
+- **No PRs**: Do NOT create pull requests. Push directly to the current branch.
+- **No new branches**: Do NOT create new branches. Always push to the already-checked-out branch.
 
 ## What NOT to Do
 
