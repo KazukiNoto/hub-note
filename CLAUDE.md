@@ -155,6 +155,10 @@ icon: lucide/link
 
 - **No reviewers**: When creating a pull request, do NOT assign any reviewers (`--reviewer` flag must not be used)
 
+## Branch Policy
+
+- **Do NOT create new branches**. Always work directly on `main`.
+
 ## What NOT to Do
 
 - Do not add `node_modules`, `package.json`, or JavaScript build tooling — the stack is Python-only
